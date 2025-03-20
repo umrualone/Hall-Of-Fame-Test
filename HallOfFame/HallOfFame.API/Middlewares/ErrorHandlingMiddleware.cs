@@ -7,10 +7,12 @@ namespace HallOfFame.Api.Middlewares
     public class ErrorHandlingMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILogger<ErrorHandlingMiddleware> _logger;
 
-        public ErrorHandlingMiddleware(RequestDelegate next)
+        public ErrorHandlingMiddleware(RequestDelegate next, ILogger<ErrorHandlingMiddleware> logger)
         {
             _next = next;
+            _logger = logger;
         }
 
         public async Task Invoke(HttpContext context)
@@ -22,10 +24,14 @@ namespace HallOfFame.Api.Middlewares
             catch (NotFoundException e)
             {
                 await HandleExceptionAsync(context, StatusCodes.Status404NotFound,  e);
+
+                _logger.LogError(e.Message);
             }
-            catch (InternalServerException e) 
+            catch (Exception e) 
             {
                 await HandleExceptionAsync(context, StatusCodes.Status500InternalServerError, e);
+
+                _logger.LogError(e.Message + e.StackTrace);
             }
         }
 

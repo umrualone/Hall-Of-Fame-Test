@@ -5,7 +5,6 @@ using HallOfFame.Application.Dtos.Responces;
 using HallOfFame.Application.Interfaces.Services;
 using HallOfFame.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace HallOfFame.API.Controllers
 {
