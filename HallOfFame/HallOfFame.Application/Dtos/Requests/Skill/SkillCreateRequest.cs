@@ -8,6 +8,7 @@ namespace HallOfFame.Application.Dtos.Requests.Skill
         [Range(1, 10)]
         public byte Level { get; set; }
         [Required]
+        [MaxLength(255)]
         public string Name { get; set; }
     }
 }
