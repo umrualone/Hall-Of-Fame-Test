@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallOfFame.API", "HallOfFame.API\HallOfFame.API.csproj", "{46A71B7F-923C-4493-8ACA-C123768E29A8}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallOfFame.Application", "HallOfFame.Application\HallOfFame.Application.csproj", "{8A6B006B-BC18-49B5-80C1-14121C3640A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallOfFame.Infrastructure", "HallOfFame.Infrastructure\HallOfFame.Infrastructure.csproj", "{97B776D0-3434-4DD5-B128-BCD38A3AE6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallOfFame.Domain.Interfaces", "HallOfFame.Domain.Interfaces\HallOfFame.Domain.Interfaces.csproj", "{B5F445B1-0D82-4F56-AE90-3A5BE2ABB69F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HallOfFame.Application.Interfaces", "HallOfFame.Application.Interfaces\HallOfFame.Application.Interfaces.csproj", "{086C994A-8830-4894-8090-F7B5D04EF8DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{97B776D0-3434-4DD5-B128-BCD38A3AE6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97B776D0-3434-4DD5-B128-BCD38A3AE6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97B776D0-3434-4DD5-B128-BCD38A3AE6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F445B1-0D82-4F56-AE90-3A5BE2ABB69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F445B1-0D82-4F56-AE90-3A5BE2ABB69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F445B1-0D82-4F56-AE90-3A5BE2ABB69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F445B1-0D82-4F56-AE90-3A5BE2ABB69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086C994A-8830-4894-8090-F7B5D04EF8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086C994A-8830-4894-8090-F7B5D04EF8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086C994A-8830-4894-8090-F7B5D04EF8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086C994A-8830-4894-8090-F7B5D04EF8DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
